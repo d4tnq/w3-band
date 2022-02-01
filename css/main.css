@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+1. Tu ngoai vao trong 
+2. Tu tren xuong duoi
+3. Tong quan -> Chi tiet
+*/
+
+/* 
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang
+*/
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px 0 24px;
+    line-height: 46px;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    /* padding: 12px 24px 12px 24px; */
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    top:100%;
+    left:0;
+}
+
+#nav .subnav li:hover {
+
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 8px 16px;
+    line-height: 22px;
+    min-width: 160px;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .search-btn {
+    float: right;
+    padding: 12px 24px;
+}
+
+#header .search-btn:hover {
+    cursor: pointer;
+    background-color: #f44336;
+} 
+
+#header .search-icon{
+    color: #fff;
+    line-height: 22px;
+}
+
+
+
+#slider {
+    position: relative;
+    margin-top:46px;
+    padding-top:50%;
+    background: url('/assets/img/slider1/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    bottom: 32px;
+    margin: 15px 0px;
+    color: #fff;
+    text-align: center;
+    /* Cach 1, can giua text */
+    /* left:50%;
+    transform: translateX(-50%); */
+
+    /* cach 2: */
+    width: 100%;
+}
+
+#slider .text-heading{
+    font-weight: 50%;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+
+#content {
+
+}
+
+#footer {
+
+}
