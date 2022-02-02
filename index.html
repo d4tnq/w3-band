@@ -10,8 +10,8 @@
 </head>
 <body>
 	<div id="main">
+		<!-- Header -->
 		<div id="header">
-			<!-- Begin: nav -->
 			<ul id="nav">
 				<li><a href="">Home</a></li>
 				<li><a href="">Band</a></li>
@@ -29,31 +29,141 @@
 					</ul>
 				</li>
 			</ul>
-			<!-- End: nav -->
 
-			<!-- Begin: search button -->
 			<div class="search-btn">
 				<i class="search-icon ti-search"></i>
 			</div>
-			<!-- End: search button -->
 		</div>
 
+		<!-- Slider -->
 		<div id="slider">
 			<div class="text-content">
-				<div>
-					<h2 class="text-heading">Chicago</h2>
-				</div>
+				<h2 class="text-heading">Chicago</h2>
 				<div class="text-description">Thank you, Chicago - A night we won't forget.</div>
 			</div>
 		</div>
 
+		<!-- Content -->
 		<div id="content">
+				<!--The Band  -->
+			<div class="content-section">
+				<h2 class="section-heading">THE BAND</h2>
+				<p class="section-sub-heading">We love music</p>
+				<p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="member-list">
+					<div class="member-item">
+						<p class="member-name">Name</p>
+						<img src="https://user-images.githubusercontent.com/98354414/152108798-0de6ed5f-81be-4ba9-aba5-adf2e9b32e8a.png" alt="" class="member-avt">
+					</div>
 
+					<div class="member-item">
+						<p class="member-name">Name</p>
+						<img src="https://user-images.githubusercontent.com/98354414/152108798-0de6ed5f-81be-4ba9-aba5-adf2e9b32e8a.png" alt="" class="member-avt">
+					</div>
+
+					<div class="member-item">
+						<p class="member-name">Name</p>
+						<img src="https://user-images.githubusercontent.com/98354414/152108798-0de6ed5f-81be-4ba9-aba5-adf2e9b32e8a.png" alt="" class="member-avt">
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<!-- Tour Dates -->
+			
+			<div class="tour-section">
+				<div class="content-section">
+					<h2 class="section-heading text-white">TOUR DATES</h2>
+					<p class="section-sub-heading text-white">Remember to book your tickets!</p>
+					<br>
+					<ul class="tickets-list">
+						<li>September <span class="sold-out">Sold out</span> </li>
+						<li>October <span class="sold-out">Sold out</span> </li>
+						<li>November <span class="quantity">3</span> </li>
+					</ul>
+					
+					<div class="place-list">
+						<div class="place-item">
+							<img src="https://user-images.githubusercontent.com/98354414/152179936-2f8c92a0-cbaa-4973-a195-3f5852520ed4.png" alt="New York" class="place-img">
+							<div class="place-body">
+								<h3 class="place-heading">New York</h3>
+								<div class="place-time">Fri 27 Nov 2016</div>
+								<div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+								<a href="#" class="place-buy-ticket">Buy Tickets</a>
+							</div>
+						</div>
+
+						<div class="place-item">
+							<img src="https://user-images.githubusercontent.com/98354414/152179936-2f8c92a0-cbaa-4973-a195-3f5852520ed4.png" alt="New York" class="place-img">
+							<div class="place-body">
+								<h3 class="place-heading">New York</h3>
+								<div class="place-time">Fri 27 Nov 2016</div>
+								<div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+								<a href="#" class="place-buy-ticket">Buy Tickets</a>
+							</div>
+						</div>
+
+						<div class="place-item">
+							<img src="https://user-images.githubusercontent.com/98354414/152179936-2f8c92a0-cbaa-4973-a195-3f5852520ed4.png" alt="New York" class="place-img">
+							<div class="place-body">
+								<h3 class="place-heading">New York</h3>
+								<div class="place-time">Fri 27 Nov 2016</div>
+								<div class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</div>
+								<a href="#" class="place-buy-ticket">Buy Tickets</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				</div>
+
+
+			<!-- Contact -->
+			<div class="content-section">
+				<h2 class="section-heading">CONTACT</h2>
+				<p class="section-sub-heading">Fan? Drop a note!</p>
+			</div>
 		</div>
 
 		<div id="footer">
 
 		</div>
+
 	</div>
+
+	<div class="modal">
+		
+		<div class="modal-container">
+			<div class="modal-close">
+				<i class="ti-close"></i>
+			</div>
+			<header class="modal-header">
+				<i class="modal-heading-icon ti-bag"></i>
+				Tickets
+			</header>
+
+			<div class="modal-body">
+				<label  for="ticket-quantity" class="modal-label">
+					<i class="ti-shopping-cart"></i>
+					Tickets, $15 per person
+				</label>
+				<input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+
+				<label for="ticket-email" class="modal-label">
+					<i class="ti-user"></i>
+					Send To
+				</label>
+				<input id="ticket-email" type="text" class="modal-input" placeholder="Enter email">
+
+				<button id="buy-tiket">
+					PAY
+					<i class="ti-check"></i>
+				</button>
+			</div>
+			<footer class="modal-footer">
+				<p class="modal-help">Need <a href="#">help</a>?</p>
+			</footer>
+		</div>
+	</div>
+
 </body>
 </html>
