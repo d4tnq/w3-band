@@ -3,8 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css">
 	<link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -31,18 +32,18 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<title>THE BAND</title>
-</head>
+</head> 
 <body>
 	<div id="main">
 		<!-- Header -->
 		<div id="header">
-			<ul id="nav">
+			<ul id="nav-pc">
 				<li><a href="#">Home</a></li>
 				<li><a href="#band">Band</a></li>
 				<li><a href="#tour">Tour</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li>
-					<a href="">
+					<a href="#">
 						More
 						<i class="nav-arrow-down ti-angle-down"></i>
 					</a>
@@ -52,11 +53,33 @@
 						<li><a href="#">Media</a></li>
 					</ul>
 				</li>
+				<div class="search-btn">
+					<i class="search-icon ti-search"></i>
+				</div>
 			</ul>
 
-			<div class="search-btn">
-				<i class="search-icon ti-search"></i>
-			</div>
+			<input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+
+			<ul id="nav-mobile">
+				<label for="nav-mobile-input" class="menu-mobile-icon">
+					<i class="ti-menu"></i>
+				</label>
+				<li><a href="#">Home</a></li>
+				<li class="hide_element"><a href="#band" onclick="myFunction()">Band</a></li>
+				<li class="hide_element"><a href="#tour" onclick="myFunction()">Tour</a></li>
+				<li class="hide_element"><a href="#contact" onclick="myFunction()">Contact</a></li>
+				<li class="hide_element">
+					<a href="#" class="hide_element">
+						More
+						<i class="nav-arrow-down ti-angle-down"></i>
+					</a>
+					<ul class="subnav">
+						<li><a href="#" onclick="myFunction()">Merchandise</a></li>
+						<li><a href="#" onclick="myFunction()">Extras</a></li>
+						<li><a href="#" onclick="myFunction()">Media</a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
 
 		<!-- Slider -->
@@ -236,35 +259,8 @@
 		</div>
 	</div>
 
-	<script>
-		const modal = document.querySelector('.js-modal')
-		const buyBtns = document.querySelectorAll('.js-buy-ticket')
-		const modalClose = document.querySelector('.js-close-modal')
-		const modalContainer = document.querySelector('.js-modal-container')
-
-		// Ham hien thi form modal buy ticket (them  class open vao modal)
-		function showBuyTickets(){
-			modal.classList.add('open')
-		}
-
-		// Ham an modal (go bo class open trong modal)
-		function hideBuyTickets(){
-			modal.classList.remove('open')
-		}
-
-		for (const buyBtn of buyBtns){
-			buyBtn.addEventListener('click', showBuyTickets)
-		}
-
-		modalClose.addEventListener('click', hideBuyTickets)
-
-		modal.addEventListener('click', hideBuyTickets)
-
-		modalContainer.addEventListener('click', function (event){
-			event.stopPropagation(modalContainer)
-		})
-		
-	</script>
-
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+	
 </body>
 </html>
+
